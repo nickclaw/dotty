@@ -3,7 +3,7 @@
 // their properties.
 //
 
-module.exports = {
+var dotty = module.exports = {
     exists: require('./lib/exists'),
     get: require('./lib/get'),
     search: require('./lib/search'),

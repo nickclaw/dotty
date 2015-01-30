@@ -1,4 +1,4 @@
-var dotty = require("../lib/index"),
+var dotty = require("../"),
     vows = require("vows"),
     assert = require("assert");
 
