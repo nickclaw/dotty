@@ -34,15 +34,15 @@ vows.describe("put").addBatch({
   "An interrupted path": {
     "as a string": {
       topic: (function() { var x = {a: 1}; return dotty.put(x, "a.b", "c"); }()),
-      "should return false": function(res) {
-        assert.isFalse(res);
-      },
+      "should return true": function(res) {
+        assert.isTrue(res);
+      }
     },
     "as an array": {
       topic: (function() { var x = {a: 1}; return dotty.put(x, ["a", "b"], "c"); }()),
-      "should return false": function(res) {
-        assert.isFalse(res);
-      },
+      "should return true": function(res) {
+        assert.isTrue(res);
+      }
     },
   },
 }).export(module);

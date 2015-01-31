@@ -4,10 +4,8 @@
 //
 
 var dotty = module.exports = {
-    exists: require('./lib/exists'),
     get: require('./lib/get'),
     search: require('./lib/search'),
     put: require('./lib/put'),
-    remove: require('./lib/remove'),
-    deepKeys: require('./lib/deepKeys')
+    remove: require('./lib/remove')
 }
